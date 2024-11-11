@@ -1,19 +1,15 @@
-import java.util.Scanner;
+import model.Cat;
+import model.Dog;
 
 public class main {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		Dog dog1 = new Dog();
+		Cat cat1 = new Cat();
 		
-		System.out.println("Gişe Uygulamasına Hoşgeldiniz!");
-		System.out.print("Lütfen TCKN Giriniz: ");
-		
-		String tcNo = scanner.nextLine();
-		
-		TCKN tcknNesne = new TCKN();
-		tcknNesne.setTckn(tcNo);
-		
-	}
+		dog1.sesVer();
+		cat1.sesVer();
 
+	}
 }
